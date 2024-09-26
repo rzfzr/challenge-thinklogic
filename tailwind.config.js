@@ -94,6 +94,35 @@ export default {
           news: '#1E3A8A',
           webinar: '#312E81',
         }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Barlow', 'sans-serif'],
+      },
+      fontSize: {
+        '2xl-d': ['80px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'xl-d': ['64px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'lg-d': ['48px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'md-d': ['40px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'sm-d': ['32px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'xs-d': ['24px', { lineHeight: '100%', letterSpacing: '-2%' }],
+
+        'xl': ['20px', { lineHeight: '150%' }],
+        'lg': ['18px', { lineHeight: '160%' }],
+        'md': ['16px', { lineHeight: '160%' }],
+        'sm': ['14px', { lineHeight: '160%' }],
+        'xs': ['12px', { lineHeight: '160%' }],
+
+        '2xl-t': ['60px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'xl-t': ['48px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'lg-t': ['40px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'md-t': ['32px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'sm-t': ['28px', { lineHeight: '100%', letterSpacing: '-4%' }],
+        'xs-t': ['24px', { lineHeight: '100%', letterSpacing: '-2%' }],
+      },
+      fontWeight: {
+        regular: '400',
+        semibold: '600',
       }
     }
   },
