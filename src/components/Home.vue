@@ -12,5 +12,3 @@
     </h3>
   </div>
 </template>
-
-
