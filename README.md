@@ -1,18 +1,13 @@
 # challenge-thinklogic
 
-This template should help get you started developing with Vue 3 in Vite.
+Some notes:
+- I used node v20
+- It is definitely not pixel perfect, I would need an extra hour for that.
+- Only half way through I realised that I could get tailwind directly from figma, so I used that instead, as result there are plenty of duplicated classes and extractables components.
+- I tried to make the scrollbar button from scratch but it is in its very initial state.
+- Some spaces on the figma project are in font-sizes, but did not match the REM scaling very well, that would be something I would question the designer about.
+- I assumed the given screen sizes as breakpoints, the larger one could scale but I chose not too.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
