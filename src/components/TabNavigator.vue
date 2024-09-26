@@ -1,5 +1,5 @@
 <template>
-    <div class="flex space-x-4 overflow-x-auto border-b-2 border-gray-300">
+    <div class="flex space-x-4 overflow-x-auto border-b-2 border-gray-300 lg:pt-[0px] pt-[40px]">
         <div class="flex-grow  border-b border-[#93a4ba] justify-between items-center inline-flex">
             <div v-for="tab in tabs" :key="tab" @click="$emit('tab-selected', tab)"
                 :class="[tab === selectedTab ? 'self-stretch  border-b-2 border-[#231f20] justify-start items-start gap-2 flex' : '']"
