@@ -16,7 +16,7 @@
                 </svg>
             </a>
         </div>
-        <div class="mt-4 md:w-1/2 md:mt-0">
+        <div class="mt-4 md:w-1/2 md:mt-0 md:ml-[40px]">
             <img :src="content[selectedTab].imageUrl" alt="Image" class="w-full rounded-lg" />
         </div>
     </div>
