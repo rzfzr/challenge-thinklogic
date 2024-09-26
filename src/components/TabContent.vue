@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col mt-6 md:flex-row">
+    <div class="flex flex-col mt-9 md:flex-row">
         <div class="md:w-1/2">
             <h4 class=" text-black text-2xl font-semibold font-display leading-[28.80px]">{{
-                content[selectedTab].title }}</h4>
+                content[selectedTab].title }} {{ selectedTab }}</h4>
             <p class="text-neutral-700 text-base font-normal font-['Inter'] leading-normal">{{
                 content[selectedTab].description }}</p>
             <a href="#" class="flex items-center text-[#002855] text-base  font-semibold font-sans leading-normal">Learn
@@ -21,7 +21,6 @@
         </div>
     </div>
 </template>
-
 <script>
 
 export default {
