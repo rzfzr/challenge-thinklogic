@@ -17,7 +17,7 @@
     </div>
 
     <div class="lg:w-2/3 lg:pl-[32px]">
-      <TabNav @tab-selected="selectedTab = $event" :tabs="tabs" />
+      <TabNav @tab-selected="selectedTab = $event" :tabs="tabs" :selectedTab="selectedTab" />
       <TabContent :selectedTab="selectedTab" :content="tabContent" />
     </div>
   </div>
