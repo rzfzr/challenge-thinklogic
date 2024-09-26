@@ -1,6 +1,7 @@
 <template>
     <div class="flex space-x-4 overflow-x-auto border-b-2 border-gray-300 lg:pt-[0px] pt-[40px]">
-        <div class="flex-grow  border-b border-[#93a4ba] justify-between items-center inline-flex">
+        <div id="scroll-container"
+            class="overflow-hidden flex-grow  border-b border-[#93a4ba] justify-between items-center inline-flex">
             <div v-for="tab in tabs" :key="tab" @click="$emit('tab-selected', tab)"
                 :class="[tab === selectedTab ? 'self-stretch  border-b-2 border-[#231f20] justify-start items-start gap-2 flex' : '']"
                 class="whitespace-nowrap">
@@ -13,6 +14,15 @@
                 </button>
             </div>
         </div>
+        <button @click="scrollTabs('right')"
+            class="absolute right-0 flex items-center justify-center w-8 h-8 p-1 bg-white border border-gray-300 rounded-full shadow-md lg:hidden">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="chevron-right">
+                    <path id="Icon" d="M7.5 15L12.5 10L7.5 5" stroke="#002855" stroke-width="1.67"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+            </svg>
+        </button>
     </div>
 </template>
 
@@ -21,6 +31,15 @@ export default {
     props: {
         tabs: Array,
         selectedTab: String
-    }
+    },
+    methods: {
+        scrollTabs(direction) {
+            const tabContainer = this.$el.querySelector('#scroll-container')
+            const scrollAmount = 150
+            if (direction === 'right') {
+                tabContainer.scrollLeft += scrollAmount
+            }
+        },
+    },
 }
 </script>
